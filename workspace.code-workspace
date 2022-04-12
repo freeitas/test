@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "utils",
+			"path": "..\\..\\Downloads\\leaflet\\leaflet\\utils"
+		},
+		{
+			"name": "use-cases",
+			"path": "..\\..\\Downloads\\leaflet\\leaflet\\use-cases"
+		},
+		{
+			"name": "TracePack",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "TracePack"
+	}
+}

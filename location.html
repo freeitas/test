@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de posições</title>
+  <link rel="stylesheet" href="css/location.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+</head>
+<body>
+  <header id="header">
+    <nav id="nav" class="nav">
+      <button id="btn-mobile" class="btn-mobile">
+        <span id="hamburger" class="hamburger"></span>
+      </button>
+      <ul id="menu" class="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="map.html">Mapa</a></li>
+        <li><a href="signup.html">Cadastro de usuário</a></li>
+        <li><a href="location.html">Cadastro de posições</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Cadastro de posições</h1>
+    
+      <div><label for="name">Nome</label> <input type="text" name="name" id="name"></div>
+      <div><label for="lat">Latitude</label> <input type="number" name="lat" id="lat"></div>
+      <div><label for="lon">Longitude</label> <input type="number" name="lon" id="lon"></div>
+    
+      <input type="submit" value="Criar feature point" class="salvar" onclick="createFeaturePoint()">
+    
+  </main>
+  <section class="back-sec">
+    <button class="back"><img src="img/white-arrow.svg" alt="Voltar"></button>
+  <a>Voltar</a>
+  </section>
+
+  <script src="js/signup.js"></script>
+  <script src="/use-cases/createFeaturePoint.js" defer></script>
+</body>
+</html>

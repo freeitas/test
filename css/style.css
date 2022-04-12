@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+}
+main {
+  height: 100vh;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #888888;
+  margin-bottom: 2rem;
+}
+a{
+  text-decoration: none;
+}
+.access, .login-area, .signup-area {
+  display: flex;
+  flex-direction: column;
+}
+.forgotten-password, .signup-a {
+  font-size: .625rem;
+  font-weight: 200;
+  margin-top: .313rem;
+  color: #BDBDBD;
+  align-self: center;
+  cursor: pointer;
+}
+button, .login-submit {
+  padding: .75rem 1.25rem;
+  border-radius: 10rem;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .75rem;
+  letter-spacing: .15rem;
+  cursor: pointer;
+} 
+label {
+  margin-top: .625rem;
+  color: #888888;
+}
+.login {
+  background-color: #5DC4A9;
+  margin: 0 0 .625rem;
+}
+.login:hover, .login-submit:hover {
+  background-color: #408472;
+  transition: ease-in .3s;
+}
+.login-area form {
+  display: none;
+} 
+.login-area form.ativo {
+  display: flex;
+  flex-direction: column;
+}
+.login-area form div {
+  display: flex;
+  flex-direction: column;
+}
+.login-area form div input {
+  height: 2.5rem;
+  border: 1px solid #CFD8DC;
+  border-radius: 5px;
+  padding: .652rem;
+}
+.login-submit {
+  margin-top: 1.25rem;
+  background-color: #5DC4A9;
+}
+.signup {
+  background-color: #BDBDBD;
+  margin: .313rem 0;
+}
+.signup:hover {
+  background-color: #5DC4A9;
+  transition: ease-in .3s;
+}
+.desktop-title {
+  display: none;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 0;
+  }
+  h1 {
+    font-size: 1.875rem;
+  }
+  .title {
+    color: #fff;
+  }
+  .access {
+    height: 100vh;
+    flex-direction: row;
+  }
+  .login-area {
+    width: 60%;
+    background-color: #5DC4A9;
+    justify-content: center;
+    align-items: center;
+  }
+  .login, .login-submit {
+    border: 1px solid #fff;
+  }
+  .login-area form.ativo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin: .625rem 0 .313rem;
+    color: #fff;
+  }
+  .signup-area {
+    width: 40%;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+  }
+  .desktop-title {
+    display: block;
+    font-size: 1.563rem;
+    text-transform: unset;
+  }
+  .signup-a {
+    display: none;
+  }
+  .login-submit, .signup {
+    width: 50%;
+    align-self: center;
+  }
+}
